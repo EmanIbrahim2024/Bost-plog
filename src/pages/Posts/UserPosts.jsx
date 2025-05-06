@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deletePost, getPosts } from "../../Components/PostRequestsFirebase";
-
 import { useNavigate } from "react-router-dom";
 import MapingPosts from "../../Components/MappingPosts/MappingPosts";
 
@@ -34,15 +33,15 @@ export default function UserPosts() {
       {userPosts.length === 0 && (
         <>
           <p className="no-posts">
-            You have no posts yet. Publish your passions and ideas, That is your way 
+            You have no posts yet. Publish your passions and ideas, That is your
+            way
           </p>
-          <button className='create-post'onClick={() => navigate(`/new-post`)}>
-          {" "}
-          Create Your First Post
-        </button>
+          <button className="create-post" onClick={() => navigate(`/new-post`)}>
+            {" "}
+            Create Your First Post
+          </button>
         </>
-        
-        ) }
+      )}
       <MapingPosts
         userPosts={userPosts}
         handleEdit={handleEdit}

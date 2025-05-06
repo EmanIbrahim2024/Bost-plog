@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { loginSuccess } from "../../redux/authSlice";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import "./Form.css";
-import {  ref, get } from "firebase/database";
+import { ref, get } from "firebase/database";
 import { realTimeDataBase } from "../../firebase";
 
 export default function Login() {
@@ -35,7 +35,7 @@ export default function Login() {
 
   return (
     <div>
-      <h2 className="pagetitle" >Login</h2>
+      <h2 className="pagetitle">Login</h2>
       <form onSubmit={handleLogin} className="Log-sign-form">
         <label> Email </label>
         <input
@@ -56,4 +56,3 @@ export default function Login() {
     </div>
   );
 }
-

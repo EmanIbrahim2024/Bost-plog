@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-// import { deletePost, getPosts } from "../../redux/postSlice";
-import { deletePost, getPosts } from '../../Components/PostRequestsFirebase';
+import { deletePost, getPosts } from "../../Components/PostRequestsFirebase";
 import { useNavigate } from "react-router-dom";
 import { Pagination } from "../../Components";
-import {MapingPosts} from "../../Components";
-
+import { MapingPosts } from "../../Components";
 
 export default function Posts() {
   const navigate = useNavigate();
@@ -38,10 +36,10 @@ export default function Posts() {
     navigate(`/edit/${post.id}`);
   };
 
-  const handleDelete = (id) =>{
-    const confirmDelete=window.confirm("Are you sure to delete this post ?")
-    if(confirmDelete) dispatch(deletePost(id));
-  }
+  const handleDelete = (id) => {
+    const confirmDelete = window.confirm("Are you sure to delete this post ?");
+    if (confirmDelete) dispatch(deletePost(id));
+  };
 
   return (
     <>
@@ -49,39 +47,11 @@ export default function Posts() {
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
 
-      <MapingPosts userPosts={currentPosts} handleEdit={handleEdit} handleDelete={handleDelete}/>
-      
-
-      {/* <ul>
-        {currentPosts.map((post) => (
-          <li key={post.id}className="all-posts-cont">
-            <div className="post-Container">
-              <strong>
-                <p className="post-title">{post.title}</p>
-              </strong>
-              <h2 className="post-content">{post.content}</h2>
-            </div>
-
-            <div className="bottompost">
-              <div className="button-Container">
-                <button onClick={() => dispatch(deletePost(post.id))}>
-                  Delete
-                </button>
-                <button onClick={() => handleEdit(post)}>Edit</button>
-              </div>
-              <div className="dateAuther-container">
-                <p className="auther-name">By: You</p>
-                <p className="date">
-                  Posted{" "}
-                  {formatDistanceToNow(new Date(post.timestamp), {
-                    addSuffix: true,
-                  })}
-                </p>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul> */}
+      <MapingPosts
+        userPosts={currentPosts}
+        handleEdit={handleEdit}
+        handleDelete={handleDelete}
+      />
 
       <Pagination
         totalPages={totalPages}

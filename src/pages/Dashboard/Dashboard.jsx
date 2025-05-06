@@ -1,5 +1,4 @@
 import "./dashboard.css";
-
 import UserPosts from "../Posts/UserPosts";
 
 export default function Dashboard() {
