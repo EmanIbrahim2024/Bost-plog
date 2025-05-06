@@ -27,7 +27,7 @@ export default function MapingPosts({ userPosts, handleEdit, handleDelete }) {
                   By: {post.Auther === user.fullName ? "You" : `${post.Auther}`}{" "}
                 </p>
                 <p className="date">
-                  Posted{" "}
+                  {" "}
                   {formatDistanceToNow(new Date(post.timestamp), {
                     addSuffix: true,
                   })}

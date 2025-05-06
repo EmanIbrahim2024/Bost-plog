@@ -51,3 +51,8 @@
   font-size: 14px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 800px) {
+  .post-form {
+    max-width: 500px;
+  }
+}

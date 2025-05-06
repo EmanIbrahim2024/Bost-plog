@@ -1,10 +1,18 @@
+html {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(90deg, #4a90e2, #50e3c2);
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .pagetitle {
   text-align: center;
   font-size: 2rem;
   color: rgb(232, 232, 232);
-  
 }
-.create-post{
+.create-post-btn {
   background-color: rgb(203, 7, 7);
   color: white;
   border: none;
@@ -14,18 +22,15 @@
   font-size: 16px;
   cursor: pointer;
   margin-left: 33px;
-
 }
-.create-post:hover{
+.create-post:hover {
   background-color: #1e2a38;
 }
 
-html{
-  padding: 0;
-  margin: 0;
-  background: linear-gradient(90deg, #4a90e2, #50e3c2);
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
+
+@media screen and (max-width: 800px) {
+  .create-post-btn {
+    width: 60%;
+  }
+}

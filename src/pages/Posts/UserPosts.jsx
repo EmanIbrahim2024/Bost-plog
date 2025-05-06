@@ -36,7 +36,7 @@ export default function UserPosts() {
             You have no posts yet. Publish your passions and ideas, That is your
             way
           </p>
-          <button className="create-post" onClick={() => navigate(`/new-post`)}>
+          <button className="create-post-btn" onClick={() => navigate(`/new-post`)}>
             {" "}
             Create Your First Post
           </button>
