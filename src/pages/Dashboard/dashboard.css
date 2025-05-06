@@ -1,0 +1,13 @@
+.userInfo{
+    background-color: rgb(241, 247, 253);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 98%;
+    margin: 0;
+}
+.welcomed{
+    font-size: 3rem;
+    color: rgb(138, 51, 22);
+}
+

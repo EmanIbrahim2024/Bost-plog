@@ -1,0 +1,56 @@
+header {
+  background-color: #1e2a38;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+ 
+}
+header img {
+  width: 200px;
+
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+header nav a {
+  color: #e4c8c8cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  text-decoration: none;
+  margin-inline: 20px;
+}
+
+header nav a:hover p,
+header nav a.active p {
+  color: #ffffff;
+
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header button {
+  background-color: #420e0e;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav a.active button {
+  background-color: #d62828;
+  border-bottom: 1px solid #d62828;
+}
+
+header button:hover {
+  background-color: #d62828;
+}

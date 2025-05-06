@@ -1,0 +1,23 @@
+.pagetitle {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(138, 51, 22);
+  
+}
+.create-post{
+  background-color: #1e2a38;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 16%;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 33px;
+
+}
+
+html{
+  padding: 0;
+  margin: 0;
+}
