@@ -1,13 +1,40 @@
-.userInfo{
-    background-color: rgb(241, 247, 253);
-    padding: 10px;
-    border-radius: 15px;
-    text-align: center;
-    width: 98%;
-    margin: 0;
-}
-.welcomed{
-    font-size: 3rem;
-    color: rgb(138, 51, 22);
+.userInfo {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* max-width: 400px; */
+  text-align: center;
+  width: 97%;
+  margin: auto;
 }
 
+.welcomed {
+  font-size: 2em;
+  font-weight: bold;
+  color: #4a90e2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Name {
+  color: #22ab8d;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.Name:hover {
+  color: #4a90e2;
+}
+
+.userMail,
+.userPhone {
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #333;
+}
+
+.userMail,
+.userPhone {
+  margin-bottom: 10px;
+  color: #333;
+}

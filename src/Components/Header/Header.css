@@ -1,10 +1,12 @@
 header {
-  background-color: #1e2a38;
+
+  background-color:  #50e3c2;
   padding: 10px;
-  color: white;
+  color: rgb(6, 10, 2);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 20px;
  
  
 }
@@ -21,7 +23,7 @@ header nav {
 }
 
 header nav a {
-  color: #e4c8c8cc;
+  color: #000000cc;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
@@ -38,7 +40,7 @@ header nav a.active p {
 }
 
 header button {
-  background-color: #420e0e;
+  background-color: #04313f;
   color: white;
   border: none;
   padding: 8px 15px;
