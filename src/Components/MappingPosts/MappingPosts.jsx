@@ -1,10 +1,10 @@
 import { formatDistanceToNow } from "date-fns";
 import "./mapping.css";
-import { useState } from "react";
+
 
 export default function MapingPosts({ userPosts, handleEdit, handleDelete }) {
   const user = JSON.parse(localStorage.getItem("user"));
-  const [content, setContent] = useState("");
+  
 
   return (
     <>
