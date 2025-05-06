@@ -6,7 +6,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
  
  
 }
@@ -47,6 +47,7 @@ header button {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  
 }
 nav a.active button {
   background-color: #d62828;
