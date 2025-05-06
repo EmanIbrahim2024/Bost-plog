@@ -52,12 +52,13 @@ export default function Posts() {
         handleEdit={handleEdit}
         handleDelete={handleDelete}
       />
-
-      <Pagination
+     <Pagination
         totalPages={totalPages}
         handlePageChange={handlePageChange}
         currentPage={currentPage}
       />
+
+     
     </>
   );
 }
