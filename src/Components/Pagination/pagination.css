@@ -7,12 +7,14 @@
   margin: 0 5px;
   padding: 6px 12px;
   background: #eee;
+  background-color: #50e3c2;;
   border: none;
   cursor: pointer;
+ 
 }
 
 .pagination button.active {
   font-weight: bold;
-  background: #333;
-  color: white;
+  background: #e8f7f6;
+  color: rgb(0, 0, 0);
 }
