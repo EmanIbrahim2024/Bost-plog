@@ -8,14 +8,14 @@ ul {
   list-style: none;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 ul li {
   background-color: rgba(245, 255, 255, 0.8);
-  width: 30%;
-  height: 390px;
+  width: 60%;
+  height: 300px;
   margin: 15px;
   border-radius: 10px;
   box-shadow: 2px 6px 8px rgba(1, 0, 0, 0.1);

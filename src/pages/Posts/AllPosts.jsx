@@ -12,7 +12,7 @@ export default function Posts() {
   const { loading, error } = useSelector((state) => state.posts);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6;
+  const postsPerPage = 4;
 
   useEffect(() => {
     dispatch(getPosts());
